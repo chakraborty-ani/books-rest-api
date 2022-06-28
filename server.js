@@ -12,7 +12,7 @@ mongoose.connection.on('open', () => {
 });
 
 app.use(bodyParser.json());
-app.use('/api/', require('./routes/books.routes'));
+app.use('/api', require('./routes/books.routes'));
 app.listen(port, () => {
     console.log(`Server running at port ${port}`);
 });
