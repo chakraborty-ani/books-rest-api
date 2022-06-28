@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT | 5000;
 
 mongoose.connect('mongodb+srv://mongoadmin:TuZ77TgPfjMjIumm@aniket-cluster.1pjyf.mongodb.net/booksDB?retryWrites=true&w=majority');
 mongoose.connection.on('open', () => {
